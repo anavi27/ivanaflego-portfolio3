@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="slike/ivana_logo1.png">
+    <title>Ivana Flego - My Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a234231740.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- HEADER - IZBORNIK -->
+    <div>
+        <div class="container">
+            <nav id="izbornik">
+                <a href="index.html">
+                    <img src="slike/ivana_logo2.png" class="logo">
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+
+                    <li class="dropdown">
+                        <a href="index.html#projects" class="dropdown-btn">Projects</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="gallery.html">My projects</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+    
+
+    <!-- PROJEKTI -->
+    <div id="my-projects">
+        <div id="header2">
+            <div class="container">
+                <h1 class="naslov-poglavlje">My Projects</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="project-row">
+                <div class="project-col-1">
+                    <h2 class="projekt-naslov">FRAME14 Website</h2>
+                    <p class="obican-text">This website was created using Figma (for UI/UX design) and WordPress. Check
+                        it out!</p>
+                    <a href="https://frame14.net/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="project-col-2">
+                    <img src="slike/frame14.png">
+                </div>
+            </div>
+            <hr>
+            <div class="my-project" id="montel">
+                <h2 class="projekt-naslov">MONTEL</h2>
+                <h3 class="projekt-podnaslov">Logo and Brand Design</h3>
+                <p class="obican-text">Using Adobe tools (Photoshop, Illustrator) and Canva, I've created a new logo for
+                    MONTEL company. <br>I've also created their new brand image by creating designs for visit cards and
+                    merch.</p>
+                <div class="gallery">
+                    <div class="gallery-item"><img src="slike/montel_projekt.png" alt="Image 1"></div>
+                    <div class="gallery-item"><img src="slike/montel_logo.png" alt="Image 2"></div>
+                    <div class="gallery-item"><img src="slike/montel_majica.png" alt="Image 3"></div>
+                    <div class="gallery-item"><img src="slike/montel_salica.png" alt="Image 4"></div>
+                </div>
+            </div>
+            <hr>
+            <div class="my-project" id="wine">
+                <h2 class="projekt-naslov">Wine Labels</h2>
+                <p class="obican-text">For a small Family Agricultural Holding <strong>Ledina</strong>.<br>Using Adobe
+                    Tools (Photoshop, Illustrator) and Canva, I've created labels for their wines.</p>
+                <div class="gallery">
+                    <div class="gallery-item"><img src="slike/wine.png" alt="Image 1"></div>
+                    <div class="gallery-item"><img src="slike/malvazija.png" alt="Image 2"></div>
+                    <div class="gallery-item"><img src="slike/cabernet_sauvignon.png" alt="Image 3"></div>
+                    <div class="gallery-item"><img src="slike/mjesavina_vina.png" alt="Image 4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="top-footer">
+            <img src="slike/ivana_logo1.png" alt="Logo">
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer-menu-list">
+                    <a href="index.html#header">Home</a>
+                </li>
+                <li class="footer-menu-list">
+                    <a href="index.html#about">About</a>
+                </li>
+                <li class="footer-menu-list">
+                    <a href="index.html#services">Services</a>
+                </li>
+                <li class="footer-menu-list">
+                    <a href="index.html#projects">Projects</a>
+                </li>
+                <li class="footer-menu-list">
+                    <a href="index.html#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="interakcija2.js"></script>
+</body>
+
+</html>

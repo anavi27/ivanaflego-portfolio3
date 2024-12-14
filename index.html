@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="slike/ivana_logo1.png">
+    <title>Ivana Flego - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a234231740.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav id="izbornik">
+        <a href="index.html">
+            <img src="slike/ivana_logo2.png" class="logo">
+        </a>
+        <ul id="sidemenu">
+            <li><a href=#header>Home</a></li>
+            <li><a href=#about>About</a></li>
+            <li><a href=#services>Services</a></li>
+
+            <li class="dropdown">
+                <a href="#projects" class="dropdown-btn">Projects</a>
+                <ul class="dropdown-menu">
+                    <li><a href="gallery.html">My projects</a></li>
+                </ul>
+            </li>
+            <li><a href=#contact>Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div id="header">
+        <div class="container">
+            
+            <div class="header-text">
+                <p>Ivana Flego</p>
+                <h1>Hi, I'm <span class="typedText"></span></h1>
+            </div>
+        </div>
+    </div>
+    <!--ABOUT ME DIO-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <span class="vertical-text">About me</span>
+                </div>
+                <div class="about-col-2">
+                    <p>Hi, I’m <strong>Ivana Flego</strong>, a Master’s student in Computer Science at the University of
+                        Rijeka.
+                        My passion lies in crafting seamless <strong>UI/UX designs</strong> and <strong>developing
+                            responsive,
+                            user-friendly websites</strong>. I thrive on <strong>challenges</strong> and embrace every
+                        opportunity
+                        to learn and grow, both individually and within a team.
+                        <br>As a <strong>creative thinker</strong>, I love blending <strong>innovation</strong>,
+                        <strong>functionality</strong>,
+                        and <strong>uniqueness</strong> in all my projects. My goal is to create digital experiences
+                        that are not only visually
+                        appealing but also <strong>intuitive</strong> and <strong>impactful</strong>. Whether
+                        brainstorming fresh ideas or
+                        fine-tuning the smallest details, I’m driven by a <strong>deep enthusiasm for
+                            problem-solving</strong> and bringing concepts
+                        to </strong>life</strong>.
+                        <br>I have 7 years of experience in Abobe Photohop which I've started learning in highschool as
+                        a hobby, but fell in love with
+                        it's endless posibilities. I'm very skilled in Figma, which I've used for many projects and my
+                        Bachelor thesis was "UI/UX Guidelines
+                        for Mobile Applications". In terms of frontend development I use HTML, CSS and JavaScript. I've
+                        also created a few apps (during my studies)
+                        in Flutter which I also love.
+                        <br><br>I’m excited about working in environments that encourage collaboration, spark curiosity,
+                        and push the boundaries of
+                        design and technology.
+                    </p>
+
+                    <div class="tab-naslovi">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-sadrzaj active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX and design</span><br>Web/App interfaces<br>Logos, labels</li>
+                            <li><span>Web development</span><br>Developing intuitive and interactive websites and
+                                applications</li>
+
+                        </ul>
+                        <div id="skills-chart"></div>
+
+                    </div>
+                    <div class="tab-sadrzaj" id="experience">
+                        <ul>
+                            <li><span>2023.</span><br>Internship at Nivago</li>
+                            <li><span>2024.</span><br>FRAME14</li>
+                        </ul>
+                    </div>
+                    <div class="tab-sadrzaj" id="education">
+                        <ul>
+                            <li><span>2020. - Current</span><br>Faculty of Informatics and Digital Technologies in
+                                Rijeka, Croatia</li>
+                            <li><span>UDEMY Course</span><br>The Front-End Web Developer Bootcamp: HTML, CSS, JS & React
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------SERVICES DIO------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="naslov-poglavlje">What can I do for you?</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I can offer you inovative, creative and visually
+                        stunning UI design following all modern day UX principles.
+                        If you want to stand out with your website, I’m the right
+                        choice for you.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h2>App Design</h2>
+                    <p>I design innovative, user-friendly, and visually appealing apps, 
+                        following modern UX principles for a seamless experience. 
+                        Let’s make your app stand out.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <h2>Logo, labels, prints</h2>
+                    <p>I can create unique logos, labels, and print designs that capture 
+                        your brand's identity. Let’s bring your vision to 
+                        life with standout visuals.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------PROJECTS DIO------------- -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="naslov-poglavlje">My Projects</h1>
+
+            <div class="projects-list">
+                <div class="project">
+                    <img src="slike/frame14.png">
+                    <div class="layer">
+                        <h3>Website</h3>
+                        <p>Website for FRAME14, created in WordPress. Check it out!</p>
+                        <a href="https://frame14.net/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="slike/montel_projekt.png">
+                    <div class="layer">
+                        <h3>Logo & Brand Design</h3>
+                        <p>Logo design and brand image for MONTEL company.</p>
+                        <a href="gallery.html#montel"><i class="fa-regular fa-images"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="slike/wine.png">
+                    <div class="layer">
+                        <h3>Label Design</h3>
+                        <p>Label design for a small Family Agricultural Holding. </p>
+                        <a href="gallery.html#wine"><i class="fa-regular fa-images"></i></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="gallery.html" class="gumb">See more of my work</a>
+        </div>
+    </div>
+
+    <!-----------------------CONTACT DIO-------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-l">
+                    <h1 class="naslov-poglavlje">Contact</h1>
+                    <p><i class="fa-solid fa-envelope"></i> ivana.flego@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 091-426-5465</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ivana-flego-546110301/"><i
+                                class="fa-brands fa-linkedin"></i></a>                        
+                    </div>
+                    <a href="slike/FlegoIvanaCV.pdf" download class="gumb gumb2">My CV</a>
+                </div>
+                <div class="contact-r">
+                    <form>
+                        <input type="text" name="name" placeholder="Write Your Name" required>
+                        <input type="email" name="email" placeholder="Write Your E-mail" required>
+                        <textarea name="message" rows="6" placeholder="Write Your Request"></textarea>
+                        <button type="submit" class="gumb gumb2">Send <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="top-footer">
+            <img src="slike/ivana_logo1.png">
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer-menu-list">
+                    <a href="#header">Home</a>
+                </li>
+                <li class="footer-menu-list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer-menu-list">
+                    <a href="#services">Services</a>
+                </li>
+                <li class="footer-menu-list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer-menu-list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <script type="text/javascript" src="interakcija.js"></script>
+
+
+</body>
+
+</html>

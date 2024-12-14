@@ -1,0 +1,821 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(slike/slika_glavna.png);
+    background-size: 60%; 
+    background-repeat: no-repeat; 
+    background-position: right; 
+}
+
+
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    height: 90px;
+    right: 0;
+    width: 100%;
+    background-color: #080808;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    vertical-align: middle;
+}
+
+
+
+.logo{
+    width: 40px;
+    margin-right: auto;
+}
+
+#izbornik a{
+    margin-right: auto;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 2px 20px;
+    position: relative;
+    right: 0;
+
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 90px;
+
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #64C37C;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown*/
+.dropdown-btn {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background: hsl(134, 29%, 17%); 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
+    min-width: 140px; 
+    z-index: 5;
+}
+
+/* Stil za stavke u dropdownu */
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 5px 5px; 
+    font-size: 14px; 
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.dropdown-menu:hover{
+    background-color: #64C37C;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.header-text p{
+    margin-top: 20%;
+    font-size: 15px;
+
+    font-weight: 500;
+}
+.header-text h1{
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.header-text h1 span{
+    color: #64C37C;
+    font-weight: bold;
+}
+
+.typedText{
+    color: #64C37C;
+}
+
+
+/*ABOUT ME DIO*/
+#about{
+    padding: 80px 0;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    color: white;
+}
+
+.vertical-text {
+    
+    writing-mode: vertical-lr; 
+    text-orientation: mixed; 
+    font-size: 100px; 
+    font-weight: bold; 
+    text-align: center;
+    position: relative;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+    margin-bottom: 40px;
+}
+
+.tab-naslovi{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-link{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-link::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #64C37C;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-link.active-link::after{
+    width: 50%;
+}
+
+.tab-sadrzaj ul li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+
+.tab-sadrzaj ul li span{
+    color: #64C37C;
+    font-size: 23px;
+}
+
+.tab-sadrzaj{
+    display: none;
+}
+
+.tab-sadrzaj.active-tab{
+    display: block;
+}
+
+
+/* SERVICES */
+
+.naslov-poglavlje{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+#services{
+    padding: 50px 0;
+
+
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-list div{
+    background: #1e3724;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 34px;
+    transition: background 0.5s, transform 0.5s;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.services-list div i{
+    font-size: 70px;
+    margin-bottom: 27px;
+    color: #ffffff; 
+}
+
+.services-list div h2{
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 17px;
+    text-align: center;
+}
+
+.services-list div:hover{
+    background: #31593a;
+    transform: translateY(-10px);
+}
+
+/* PROJECTS */
+
+#projects{
+    padding: 50px 0;
+}
+
+.projects-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.project{
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img{
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #1e3724);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 12px;
+    transition: height 0.5s;
+}
+
+.project:hover img{
+    transform: scale(1.1);
+}
+
+.project:hover .layer{
+    height: 100%;
+}
+
+.layer h3{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #64C37C;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 40px;
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+
+.gumb{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #64C37C;
+    padding: 14px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    transition: background 0.5s;
+    text-align: center;
+}
+
+.gumb:hover{
+    background: #64C37C;
+
+}
+
+
+/*CONTACT*/
+
+.contant-l{
+    flex-basis: 35%;
+}
+
+.contact-l p{
+    margin-top: 30px;
+}
+
+.contact-l p i{
+    color: #64C37C;
+    margin-right: 15px;
+    font-size: 30px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #fff;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #64C37C;
+    transform: translateY(-5px);
+}
+
+.gumb.gumb2{
+    display: inline-block;
+    background: #64C37C;
+    
+}
+
+.contact-l .gumb2{
+    transition: transform 0.5s;
+}
+
+.contact-l .gumb2:hover{
+    transform: scale(1.1);
+}
+
+.contact-r{
+    flex-basis: 60%;
+}
+
+.contact-r form{
+    width: 100%;
+
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #232323;
+    padding: 15px;
+    margin: 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+form .gumb2{
+    padding: 14px 40px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+form .gumb2:hover{
+    transform: scale(1.1);
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+    background: #64C37C;
+    padding-block: 30px 60px;
+
+}
+
+.top-footer {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.top-footer img {
+    width: 15%; 
+    object-position: center; 
+}
+
+.middle-footer .footer-menu{
+    display: flex; 
+}
+
+.footer-menu-list{
+    list-style: none;
+}
+
+.footer-menu-list a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    margin-inline: 20px;
+}
+
+
+
+@media only screen and (max-width: 700px){
+    #header{
+        background-image: url(slike/slika_glavna.png);
+        background-size: 80%;
+        background-position: center;
+    }
+    .header-text p{
+        margin-top: 20%;
+        text-align: center;
+        opacity: 0;     
+    }
+
+    .header-text h1{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    nav .fa-solid{
+        display: block;
+        font-size: 27px;
+    }
+
+    nav ul{
+        background: #64C37C;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 27px;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 27px;
+        left: 27px;
+        cursor: pointer;
+    }
+
+    .vertical-text{
+        font-size: 40px; 
+        font-weight: bold; 
+        text-align: center;
+        color: white;
+        writing-mode: horizontal-tb;     
+
+    }
+
+    .naslov-poglavlje{
+        font-size: 40px;
+    }
+
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+
+    .about-col-1{
+        margin-bottom: 27px;
+    }
+
+    .about-col-1{
+        font-size: 14px;
+        font-weight: 100;
+    }
+
+    .tab-link{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-l, .contact-r{
+        flex-basis: 100%;
+    }
+
+    nav ul li {
+        position: relative; 
+    }
+    
+    .dropdown-menu {
+        display: none;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 5px;
+        color: white;
+ 
+    }
+    
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    .dropdown-menu:hover {
+        background-color: #367b52;
+    }
+
+    .services-list,
+    .projects-list, .gallery {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .project-col-1, .project-col-2{
+        flex-basis: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .project-col-1{
+        margin-bottom: 27px;
+    }
+
+    .project-col-2 img{
+        width: 100%;
+    }
+
+    .my-project{
+        align-items: center;
+    }   
+
+    .middle-footer .footer-menu{
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .footer-menu-list{
+        list-style:none;
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 800px){
+
+    .vertical-text{
+        font-size: 40px; 
+        font-weight: bold; 
+        text-align: center;
+        color: white;
+        writing-mode: horizontal-tb;     
+
+    }
+
+    .about-col-1{
+        margin-bottom: 27px;
+        flex-basis: 100%;
+    }
+
+    .about-col-1{
+        font-size: 14px;
+        font-weight: 100;
+    }
+
+    .project-row{
+        flex-direction: column;
+    }
+
+
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-track{
+    background: #d6ecdb;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #819786;
+    border-radius: 30px;
+}
+
+
+#skills-chart {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: flex-start;  
+    align-items: center; 
+    overflow: hidden;
+    position: relative;
+    background-color: transparent; 
+}
+
+svg {
+    width: 100%; 
+    height: 100%; 
+    display: block; 
+}
+
+
+#my-projects{
+    padding: 50px 10px;
+}
+
+.project-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: stretch;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+.project-col-1{
+    background: #080808;
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100%;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 20px;
+    min-height: 400px;
+    margin-top: 10px;
+}
+
+.project-col-1 i{
+    font-size: 30px;
+    padding: 10px;
+    background: white;
+    color: #64C37C;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.project-col-2{
+    flex-basis: 35%;
+    margin-bottom: 20px;
+}
+
+.project-col-2 img{
+    width: 100%;
+    border-radius: 150px 170px 120px 190px;
+}
+
+.projekt-naslov{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    color: #64C37C;
+}
+
+.obican-text{
+    font-size: 15px;
+    font-weight: 400;
+    padding: 20px 20px;
+    text-align: center;
+}
+#my-project{
+    margin-top: 50px;
+}
+.projekt-podnaslov{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+#header2 {
+    width: 100%;
+    height: 20vh;
+    margin-top: 30px;
+
+}
